@@ -22,12 +22,19 @@ app.listen(port, () => {
     MongoClient.connect(url, function (err, db) {
       if (err) throw err;
       var customersData = req.body;
-      db.collection("feedbackdata").insertOne(customersData, function (err, res) {
+      const collection = db.collection("feedbackdata");
+      collection.insertOne(customersData, function (err, res) {
         if (err) throw err;
-        console.log("one Instered Created");
+      collection.count(function(err, count) {
+            console.log("count = %s", count);
+          });
+          collection.find().toArray(function(err, results) {
+            console.log(JSON.stringify(results));
+          });
+        console.log("1 Data Insereted");
         db.close();
       });
     });
-    res.send('Success');
+    res.send('Data Added in Database');
   });
 });
