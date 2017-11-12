@@ -7,9 +7,9 @@ var MongoClient = mongodb.MongoClient;
 // Connection URL. This is where your mongodb server is running.
 
 //(Focus on This Variable)
-   // var url = 'mongodb://localhost:27017/my_database_name';      
+   var url = 'mongodb://localhost:27017/my_database_name';      
 //(Focus on This Variable)
-var url = 'mongodb://meanuser:Developer!123@ds257485.mlab.com:57485/mobilemean'; 
+
 // Use connect method to connect to the Server
   MongoClient.connect(url, function (err, db) {
   if (err) {
