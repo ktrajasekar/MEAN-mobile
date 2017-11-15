@@ -1,0 +1,26 @@
+<ion-view view-title="Contact">
+  <ion-content>
+    <form ng-submit="submitForm();" method="POST">
+    <div class="list list-inset">
+      <label class="item item-input item-stacked-label">
+        <span class="input-label"> Name</span>
+        <input type="text" placeholder="John" ng-model="user.name">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Email</span>
+        <input type="text" placeholder="john@suhr.com" ng-model="user.email">
+      </label>
+      <label class="item item-input item-stacked-label">
+          <span class="input-label">Phone</span>
+          <input type="text" placeholder="john@suhr.com" ng-model="user.phone">
+        </label>
+        <label class="item item-input item-stacked-label">
+            <span class="input-label">Feedback</span>
+            <textarea placeholder="..." ng-model="user.feedback"></textarea>
+          </label>
+      <input type="submit" class="button button-block button-positive" value="Send">
+    <p style="text-align:center;">{{message}}</p>  
+    </div>
+    </form>
+  </ion-content>
+</ion-view>
