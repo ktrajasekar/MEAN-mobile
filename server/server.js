@@ -6,7 +6,7 @@ const port = 8000;
 const cors = require('cors')
 
 app.use(cors());
-var url = 'mongodb://meanuser:Developer!123@ds257485.mlab.com:57485/mobilemean';
+var url = '<yourmongodb>';
 app.use(bodyParser.json()); // to support JSON-encoded bodies
 app.use(bodyParser.urlencoded({ // to support URL-encoded bodies
   extended: true
