@@ -2,7 +2,7 @@
 
 ## Screenshot
 
-![MEAN Contact form Screenshot](https://techeasy.files.wordpress.com/2017/12/screenshot.gif)
+![MEAN Contact form Screenshot](https://techeasy.files.wordpress.com/2017/12/screenshot1.gif)
 
 MEAN Programming with IONIC APP
 
